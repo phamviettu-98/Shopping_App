@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/dt_tragop"
+        android:text="Trả góp 0%"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:background="#FFC107"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:id="@+id/dt_img"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/dt_dacbiet"
+        android:src="@drawable/sechia"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id="@+id/dt_ten_item"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Oppo 5s"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/dt_giamoi"
+            android:layout_weight="1"
+            android:text="4390000 đ"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#FF0000"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/dt_giacu"
+            android:layout_weight="1"
+            android:text="4990000 đ"
+
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/dt_star_1"
+            android:src="@drawable/ic_start"
+            android:layout_width="30dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/dt_star_2"
+            android:src="@drawable/ic_start"
+            android:layout_width="30dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/dt_star_3"
+            android:src="@drawable/ic_start"
+            android:layout_width="30dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/dt_star_4"
+            android:src="@drawable/ic_star_half"
+            android:layout_width="30dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/dt_star_5"
+            android:src="@drawable/ic_start_hide"
+            android:layout_width="30dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/dt_luot_danhgia"
+            android:text="1000 đánh giá"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

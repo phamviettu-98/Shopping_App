@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home_icon"/>
+        <item android:id="@+id/nav_dt"
+            android:title="Điện Thoại"
+            android:icon="@drawable/phone"/>
+        <item android:id="@+id/nav_laptop"
+            android:title="LapTop"
+            android:icon="@drawable/laptop"/>
+        <item android:id="@+id/nav_tablet"
+            android:title="Tablet"
+            android:icon="@drawable/ipad"/>
+
+    </group>
+
+<item android:title="Profile" >
+    <menu>
+        <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_login"
+            android:title="Login"
+            android:icon="@drawable/login_icon"/>
+            <item android:id="@+id/nav_dangki"
+                android:title="Register"
+                android:icon="@drawable/profile_icon"/>
+        <item android:id="@+id/nav_profile"
+            android:title="Cart"
+            android:icon="@drawable/ic_car"/>
+        <item android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_icon"/>
+        </group>
+    </menu>
+
+</item>
+
+
+</menu>

@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/custorm_dialog"
+    android:orientation="vertical"
+    android:layout_height="200dp">
+    <TextView
+        android:paddingTop="20dp"
+        android:text="Bạn Cần Đăng Nhập Tài Khoản"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/btn_ok"
+            android:text="OK"
+            android:background="@drawable/custorm_btn"
+            android:layout_marginLeft="10dp"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_cal"
+            android:text="Cannel"
+            android:textAllCaps="false"
+           android:layout_marginLeft="20dp"
+            android:textSize="24sp"
+            android:background="@drawable/custorm_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

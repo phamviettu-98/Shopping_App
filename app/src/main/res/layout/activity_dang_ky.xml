@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_gravity="center"
+
+    tools:context=".activities.DangKyActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_dki"
+        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar_dki"
+            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#03A9F4"
+            android:elevation="0dp"
+            app:navigationIcon="@drawable/ic_menu_24"
+            app:title="@string/dangki" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TableRow
+        android:layout_marginTop="36sp"
+        android:layout_height="50dp">
+        <TextView
+            android:text="Họ Tên :"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="right"
+            android:textColor="#f000"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:hint="Nhập họ tên">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dk_hoten"
+                android:layout_width="180dp"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:layout_height="70dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </TableRow>
+    <TableRow>
+    <TextView
+        android:text="Mật Khẩu :"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="right"
+        android:textColor="#f000"
+
+        />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:hint="Nhập mât khẩu">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dk_pass"
+                android:layout_width="180dp"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:layout_height="70dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+</TableRow>
+    <TableRow>
+        <TextView
+            android:text="SĐT :"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="right"
+            android:textColor="#f000"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:hint="Nhập họ tên">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dk_sdt"
+                android:layout_width="180dp"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:layout_height="70dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Địa Chỉ :"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="right"
+            android:textColor="#f000"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:hint="Nhập địa chỉ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dk_diachi"
+                android:layout_width="180dp"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:layout_height="70dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+        <TableRow>
+           <Button
+               android:id="@+id/btn_dki"
+               android:text="Đăng kí"
+               android:layout_weight="2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="22sp"
+               android:background="@drawable/custorm_btn"
+               android:gravity="center"
+               android:layout_margin="10dp"
+               android:textColor="#f000"
+               />
+            <Button
+                android:id="@+id/btn_cannel"
+                android:text="Cannel"
+                android:layout_weight="1"
+                android:background="@drawable/custorm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#f000"
+                />
+
+        </TableRow>
+
+
+
+
+
+   
+</TableLayout>

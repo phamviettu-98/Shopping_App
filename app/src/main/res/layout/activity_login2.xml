@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_login"
+        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar_login"
+            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#03A9F4"
+            android:elevation="0dp"
+            app:navigationIcon="@drawable/back_icon"
+            app:title="@string/danhnhap" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:src="@drawable/profile_icon"
+            android:layout_width="50dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:background="#0C0C0C"
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="60dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Nhập Tên Đăng Nhập">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_ten"
+                android:layout_width="250dp"
+
+                android:layout_height="70dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:src="@drawable/pass_icon"
+            android:layout_width="50dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:background="#0C0C0C"
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/textfield_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_pass"
+                android:layout_width="250dp"
+                android:inputType="textPassword"
+                android:layout_height="70dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+   <Button
+       android:layout_marginTop="50dp"
+       android:id="@+id/login_dn"
+       android:textColor="#f000"
+       android:text="Đăng Nhập"
+       android:background="@drawable/custorm_btn"
+       android:layout_gravity="center"
+       android:layout_width="200dp"
+       android:layout_height="50dp"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_dki"
+        android:textColor="#f000"
+        android:text="Đăng kí"
+        android:background="@drawable/custorm_btn"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_cannel"
+        android:textColor="#f000"
+        android:text="Cannel"
+        android:background="@drawable/custorm_btn"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

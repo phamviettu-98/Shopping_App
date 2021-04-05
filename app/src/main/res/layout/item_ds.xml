@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="300dp">
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/ds_img"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/ds_tvTen"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:text="TextView"
+        android:layout_marginTop="5dp"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ds_img"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/ds_linerdanhgia"
+        android:layout_width="0dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ds_img"
+        app:layout_constraintTop_toBottomOf="@+id/ds_tvTen">
+        <ImageView
+            android:id="@+id/ds_s1"
+            android:src="@drawable/ic_start"
+            android:layout_width="25dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/ds_s2"
+            android:src="@drawable/ic_start"
+            android:layout_width="25dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/ds_s3"
+            android:src="@drawable/ic_start"
+            android:layout_width="25dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/ds_s4"
+            android:src="@drawable/ic_start"
+            android:layout_width="25dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/ds_s5"
+            android:src="@drawable/ic_start"
+            android:layout_width="25dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:paddingLeft="5sp"
+            android:paddingRight="5dp"
+            android:id="@+id/ds_sosao"
+            android:textColor="#f000"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="7 danh gia "
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/danhsach_giasp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ds_img"
+        app:layout_constraintTop_toBottomOf="@+id/ds_linerdanhgia">
+        <TextView
+            android:id="@+id/ds_giacu"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#60000000"
+            android:text="₫"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/ds_giamoi"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#F80303"
+            android:text="4000000₫"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnXemChiTiet"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Xem Chi Tiết"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ds_img"
+        app:layout_constraintTop_toBottomOf="@+id/danhsach_giasp" />
+
+    <Button
+        android:id="@+id/btnAddCart"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:text="Thêm Vào Giỏ Hàng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ds_img"
+        app:layout_constraintTop_toBottomOf="@+id/btnXemChiTiet" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f000"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
